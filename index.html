@@ -1,10 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerador de senhas</title>
+
+    <link rel="Styleshhet"href="estilo.css">
 </head>
 <body>
+<img class="logo" src="./Assets/logo.png" alt="Gerador de senha logo"/>
 
+<main class="container-input">
+<span>Tamanho <span id="valor"></span> caracteres</span>
+<input id="slider" class="Slider" type="range" min="5" max="25" value="15">
+<button id="butoom" class="button-cta" >Gerar senha</button>
+</main>
+<div id="container-password" class="container-password hide">
+  <span class="title">Sua senha gerado foi:</span>
+    <span id="password" class="password">123123123</span>
+    <span>Clique para continuar</span>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
